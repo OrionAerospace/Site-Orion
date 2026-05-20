@@ -1,4 +1,5 @@
-
+import React from 'react';
+import Conquistas from './pages/Conquistas';
 
 export default function App() {
   return (
@@ -21,7 +22,7 @@ export default function App() {
       </section>
 
       <section id="conquistas">
-        {/* conquistas conteúdo aqui */}
+        <Conquistas />
       </section>
 
       <section id="processo">
