@@ -1,5 +1,6 @@
 import React from 'react';
 import Conquistas from './pages/Conquistas';
+import Processo from './pages/Processo';
 
 export default function App() {
   return (
@@ -26,7 +27,7 @@ export default function App() {
       </section>
 
       <section id="processo">
-        {/* processo seletivo conteúdo aqui */}
+        <Processo />
       </section>
 
       <section id="contato">
