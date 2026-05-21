@@ -1,10 +1,10 @@
 import React from 'react';
-import Conquistas from './pages/Conquistas';
-import Processo from './pages/Processo';
-import Hero from './pages/Hero';
-import Navbar from './components/Navbar';
-import Sobre from './pages/Sobre';
-import Areas from './pages/Areas';
+import Conquistas from './pages/Conquistas/Conquistas';
+import Processo from './pages/Processo/Processo';
+import Hero from './pages/Hero/Hero';
+import Navbar from './components/Navbar/Navbar';
+import Sobre from './pages/Sobre/Sobre';
+import Areas from './pages/Areas/Areas';
 import Contato from './pages/Contato/Contato';
 
 export default function App() {
