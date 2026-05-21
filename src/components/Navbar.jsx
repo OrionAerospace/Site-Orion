@@ -7,7 +7,7 @@ export default function Navbar() {
       </div>
 
       <ul className="navbar-links">
-        <li><a href="#home">Home</a></li>
+        <li><a href="#hero">Home</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#areas">Áreas</a></li>
         <li><a href="#conquistas">Conquistas</a></li>

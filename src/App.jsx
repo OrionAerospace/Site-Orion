@@ -1,34 +1,26 @@
 import React from 'react';
 import Conquistas from './pages/Conquistas';
 import Processo from './pages/Processo';
+import Hero from './pages/Hero';
+import Navbar from './components/Navbar';
+import Sobre from './pages/Sobre';
+import Areas from './pages/Areas';
 
 export default function App() {
   return (
     <div className="app">
 
-      <nav id="navbar">
-        {/* navbar conteúdo aqui */}
-      </nav>
+      <Navbar />
 
-      <section id="home">
-        {/* hero conteúdo aqui */}
-      </section>
+      <Hero />
 
-      <section id="sobre">
-        {/* sobre conteúdo aqui */}
-      </section>
+      <Sobre />
 
-      <section id="areas">
-        {/* áreas conteúdo aqui */}
-      </section>
+      <Areas />
 
-      <section id="conquistas">
-        <Conquistas />
-      </section>
+      <Conquistas />
 
-      <section id="processo">
-        <Processo />
-      </section>
+      <Processo />
 
       <section id="contato">
         {/* contato conteúdo aqui */}
