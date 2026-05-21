@@ -22,7 +22,7 @@ export default function RedesSociais() {
           target="_blank"
           rel="noreferrer"
         >
-          <FaInstagram />
+          <FaInstagram size={24}/>
         </a>
 
         <a
@@ -31,7 +31,7 @@ export default function RedesSociais() {
           target="_blank"
           rel="noreferrer"
         >
-          <FaLinkedin />
+          <FaLinkedin size={24}/>
         </a>
 
         <a
@@ -40,7 +40,7 @@ export default function RedesSociais() {
           target="_blank"
           rel="noreferrer"
         >
-          <FaGithub />
+          <FaGithub size={24}/>
         </a>
 
       </div>
