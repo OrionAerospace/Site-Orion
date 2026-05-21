@@ -5,6 +5,7 @@ import Hero from './pages/Hero';
 import Navbar from './components/Navbar';
 import Sobre from './pages/Sobre';
 import Areas from './pages/Areas';
+import Contato from './pages/Contato/Contato';
 
 export default function App() {
   return (
@@ -22,9 +23,7 @@ export default function App() {
 
       <Processo />
 
-      <section id="contato">
-        {/* contato conteúdo aqui */}
-      </section>
+      <Contato /> 
 
       <footer>
         {/* footer conteúdo aqui */}
