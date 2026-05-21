@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-import heroRocket from '../assets/hero-rocket.png';
+import heroRocket from '../../assets/hero-rocket.png'; 
 
 const StatItem = ({ number, label }) => (
   <>
