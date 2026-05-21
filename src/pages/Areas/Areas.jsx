@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FiMonitor, FiSend, FiCode, FiUsers, FiBookOpen } from "react-icons/fi";
 import "./Areas.css";
 
 const areas = [
@@ -15,6 +16,7 @@ const areas = [
       "Articulação com instituições e mídia",
     ],
     icon: "📋",
+    tabIcon: FiMonitor,
   },
   {
     id: "aerodinamica",
@@ -29,6 +31,7 @@ const areas = [
       "Testes de túnel de vento",
     ],
     icon: "✈️",
+    tabIcon: FiSend,
   },
   {
     id: "computacao",
@@ -43,6 +46,7 @@ const areas = [
       "Ferramentas de modelagem e visualização",
     ],
     icon: "💻",
+    tabIcon: FiCode,
   },
   {
     id: "extensao",
@@ -57,6 +61,7 @@ const areas = [
       "Campanhas de engajamento social",
     ],
     icon: "🌐",
+    tabIcon: FiUsers,
   },
   {
     id: "pesquisa",
@@ -71,6 +76,7 @@ const areas = [
       "Publicações e relatórios técnicos",
     ],
     icon: "🔬",
+    tabIcon: FiBookOpen,
   },
 ];
 
@@ -95,21 +101,23 @@ export default function Areas() {
         </div>
 
         <div className="areas-tabs">
-          {areas.map((area) => (
-            <button
-              key={area.id}
-              className={`area-tab ${
-                activeArea.id === area.id ? "active" : ""
-              }`}
-              onClick={() => setActiveArea(area)}
-            >
-              {area.title}
-            </button>
-          ))}
+          {areas.map((area) => {
+            const Icon = area.tabIcon;
+            return (
+              <button
+                key={area.id}
+                className={`area-tab ${activeArea.id === area.id ? "active" : ""}`}
+                onClick={() => setActiveArea(area)}
+              >
+                <Icon size={24} />
+                {area.title}
+              </button>
+            );
+          })}
         </div>
 
         <div className="area-content">
-          
+
           {/* INFO */}
           <div className="area-info">
             <span className="area-number">{activeArea.number}</span>
