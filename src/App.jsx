@@ -1,13 +1,34 @@
-import { useState } from 'react'
+import React from 'react';
+import Conquistas from './pages/Conquistas/Conquistas';
+import Processo from './pages/Processo/Processo';
+import Hero from './pages/Hero/Hero';
+import Navbar from './components/Navbar/Navbar';
+import Sobre from './pages/Sobre/Sobre';
+import Areas from './pages/Areas/Areas';
+import Contato from './pages/Contato/Contato';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <h1>Site Orion</h1>
-    </>
-  )
-}
+    <div className="app">
 
-export default App
+      <Navbar />
+
+      <Hero />
+
+      <Sobre />
+
+      <Areas />
+
+      <Conquistas />
+
+      <Processo />
+
+      <Contato /> 
+
+      <footer>
+        {/* footer conteúdo aqui */}
+      </footer>
+
+    </div>
+  );
+}
