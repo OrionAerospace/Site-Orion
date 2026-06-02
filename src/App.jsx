@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles/SpaceBackground.css';
 import Conquistas from './pages/Conquistas/Conquistas';
 import Processo from './pages/Processo/Processo';
 import Hero from './pages/Hero/Hero';

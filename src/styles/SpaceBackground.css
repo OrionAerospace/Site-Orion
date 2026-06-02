@@ -1,0 +1,44 @@
+#sobre,
+#areas,
+#conquistas,
+#processo,
+#contato {
+  position: relative;
+  background-image: url('/src/assets/space-wallpaper.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#sobre::before,
+#areas::before,
+#conquistas::before,
+#processo::before,
+#contato::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: rgba(3, 5, 10, 0.88);
+}
+
+#sobre > *,
+#areas > *,
+#conquistas > *,
+#processo > *,
+#contato > * {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  #sobre,
+  #areas,
+  #conquistas,
+  #processo,
+  #contato {
+    background-attachment: scroll;
+  }
+}
