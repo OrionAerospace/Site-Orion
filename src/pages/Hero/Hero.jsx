@@ -1,6 +1,12 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './Hero.css';
-import heroRocket from '../../assets/hero-rocket.png'; 
+import orionBg1 from '../../assets/orion-bg-1.jpg';
+import orionBg2 from '../../assets/orion-bg-2.jpg';
+import orionBg3 from '../../assets/orion-bg-3.jpg';
+import orionBg4 from '../../assets/orion-bg-4.jpg';
+
+
+const backgroundImages = [orionBg1, orionBg2, orionBg3, orionBg4];
 
 const StatItem = ({ number, label }) => (
   <>
@@ -12,13 +18,30 @@ const StatItem = ({ number, label }) => (
 );
 
 const Hero = () => {
+  const [currentBg, setCurrentBg] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentBg((prev) => (prev+1) % backgroundImages.length);
+    }, 7500);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section id="hero" className="hero">
-      <div className="hero-bg">
+      {/*backgrounds com transição*/}
+      {backgroundImages.map((img, index) => (
+        <div
+        key={index}
+        className={`hero-bg ${index === currentBg? 'active' : ''}`}
+        style={{backgroundImage: `url(${img})` }} 
+        />
+      ))}
+
         <div className="hero-overlay"></div>
-      </div>
       
-      {/* Container para a animação de partículas que está no seu script.js */}
+      {/* Container para a animação de partículas que está no script.js */}
       <div className="hero-particles" id="heroParticles"></div>
       
       <div className="hero-content">
