@@ -13,6 +13,20 @@
   box-sizing: border-box;
 }
 
+/* --- NOVO: Alinhamento da imagem e do texto --- */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Controla o espaço entre a logo e a palavra ORION */
+}
+
+.logo-img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+/* --------------------------------------------- */
+
 .navbar-logo span {
   color: #ffffff;
   font-size: 18px;
