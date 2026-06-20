@@ -41,19 +41,19 @@ export default function Contato() {
 
             <CardContato
               title="E-mail Geral"
-              value="contato@orion.com"
+              value="contato@orionaerospace.org"
               type="email"
             />
 
             <CardContato
               title="Patrocínio"
-              value="patrocinio@orion.com"
+              value="patrocinio@orionaerospace.org"
               type="patrocinio"
             />
 
             <CardContato
               title="Processo Seletivo"
-              value="processo@orion.com"
+              value="processo@orionaerospace.org"
               type="processo"
             />
 
