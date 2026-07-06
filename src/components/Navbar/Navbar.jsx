@@ -1,9 +1,13 @@
+import React from 'react';
 import './Navbar.css';
+import logoOrion from '../../assets/logo.png';
+
 export default function Navbar() {
   return (
     <nav id="navbar">
       <div className="navbar-logo">
-        <span>⊙ ORION</span>
+        <img src={logoOrion} alt="Logo Orion Aerospace Design" className="logo-img" />
+        <span>ORION</span>
       </div>
 
       <ul className="navbar-links">
@@ -12,7 +16,6 @@ export default function Navbar() {
         <li><a href="#areas">Áreas</a></li>
         <li><a href="#conquistas">Conquistas</a></li>
         <li><a href="#processo">Processo Seletivo</a></li>
-        <li><a href="#contato">Contato</a></li>
       </ul>
 
       <button className="navbar-cta">Junte-se a nós</button>

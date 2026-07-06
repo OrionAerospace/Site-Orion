@@ -1,30 +1,33 @@
 :root {
-    /* Colors */
-    --bg-primary: #060b18;
-    --bg-secondary: #0a1224;
-    --bg-card: #0e1a32;
-    --bg-card-hover: #132240;
-    --bg-glass: rgba(14, 26, 50, 0.7);
+    /* Colors - Paleta Principal Orion */
+    --bg-primary: #00072c;
+    --bg-secondary: #061651;
+    --bg-card: #0A2471;
+    --bg-card-hover: #123498;
+    --bg-glass: rgba(10, 36, 113, 0.7);
 
+    /* O azul mais claro do guia usado para detalhes de contraste */
+    --accent-primary: #DEECFB; 
+    --accent-secondary: #123498;
+    --accent-tertiary: #DEECFB;
+    --accent-glow: rgba(222, 236, 251, 0.25);
+
+    /* Gradientes atualizados com a nova paleta */
+    --gradient-primary: linear-gradient(135deg, #123498 0%, #0A2471 100%);
+    --gradient-accent: linear-gradient(135deg, #DEECFB 0%, #123498 100%);
+    --gradient-bg: linear-gradient(180deg, #00072c 0%, #061651 100%);
+
+    --border-color: rgba(222, 236, 251, 0.12);
+    --border-hover: rgba(222, 236, 251, 0.3);
+
+    /* Mantendo as cores de texto originais para boa leitura, ajustando se necessário */
     --text-primary: #e8ecf4;
     --text-secondary: #8da2c0;
     --text-muted: #4a6080;
 
-    --accent-primary: #2563eb;
-    --accent-secondary: #0ea5e9;
-    --accent-tertiary: #38bdf8;
-    --accent-glow: rgba(37, 99, 235, 0.25);
-
-    --gradient-primary: linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #0ea5e9 100%);
-    --gradient-accent: linear-gradient(135deg, #0ea5e9 0%, #38bdf8 100%);
-    --gradient-bg: linear-gradient(180deg, #060b18 0%, #0a1224 100%);
-
-    --border-color: rgba(37, 99, 235, 0.12);
-    --border-hover: rgba(37, 99, 235, 0.3);
-
-    /* Typography */
-    --font-heading: 'Outfit', sans-serif;
-    --font-body: 'Space Grotesk', sans-serif;
+    /* Typography - Atualizada para Montserrat */
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Montserrat', sans-serif;
 
     /* Spacing */
     --section-padding: 120px;
