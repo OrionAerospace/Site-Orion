@@ -21,6 +21,18 @@ import pesq2 from "../../assets/fotosPesquisa/pesq2.jpg";
 import pesq3 from "../../assets/fotosPesquisa/pesq3.jpg";
 import pesq4 from "../../assets/fotosPesquisa/pesq4.jpg";
 
+
+// Icone administrativo
+import { FaUserGear } from "react-icons/fa6";
+// Icone aerodinamica
+import { IoIosRocket } from "react-icons/io";
+// Icone computacao
+import { FaCode } from "react-icons/fa";
+// Icone de extensao
+import { IoIosPeople } from "react-icons/io";
+// Icone de pesquisa
+import { CiSearch } from "react-icons/ci";
+
 const areas = [
   {
     id: "administrativo",
@@ -33,9 +45,8 @@ const areas = [
       "Planejamento administrativo",
       "Articulação com instituições e mídia",
     ],
-    icon: "📋",
     images: [],
-    tabIcon: FiMonitor,
+    tabIcon: FaUserGear,
   },
   {
     id: "aerodinamica",
@@ -48,9 +59,8 @@ const areas = [
       "Simulações CFD",
       "Testes de túnel de vento",
     ],
-    icon: "✈️",
     images: [aero1, aero2, aero3, aero4, aero5],
-    tabIcon: FiSend,
+    tabIcon: IoIosRocket,
   },
   {
     id: "computacao",
@@ -63,9 +73,8 @@ const areas = [
       "Análise de dados de voo",
       "Ferramentas de modelagem e visualização",
     ],
-    icon: "💻",
     images: [],
-    tabIcon: FiCode,
+    tabIcon: FaCode,
   },
   {
     id: "extensao",
@@ -78,9 +87,8 @@ const areas = [
       "Oficinas de divulgação científica",
       "Campanhas de engajamento social",
     ],
-    icon: "🌐",
     images: [ext1, ext2, ext3, ext4],
-    tabIcon: FiUsers,
+    tabIcon: IoIosPeople,
   },
   {
     id: "pesquisa",
@@ -93,9 +101,8 @@ const areas = [
       "Coleta e análise de dados experimentais",
       "Publicações e relatórios técnicos",
     ],
-    icon: "🔬",
     images: [pesq1, pesq2, pesq3, pesq4],
-    tabIcon: FiBookOpen,
+    tabIcon: CiSearch,
   },
 ];
 
@@ -150,7 +157,7 @@ export default function Areas() {
                 onClick={() => setActiveArea(area)}
               >
                 <Icon size={24} />
-                {area.title}
+                <span className="tab-label">{area.title}</span>
               </button>
             );
           })}
@@ -177,7 +184,7 @@ export default function Areas() {
 
           <div className="area-card">
             {activeArea.images && activeArea.images.length > 0 ? (
-              <div className="area-image-container">
+              <>
                 {activeArea.images.map((image, index) => (
                   <img
                     key={index}
@@ -188,9 +195,17 @@ export default function Areas() {
                     }`}
                   />
                 ))}
-              </div>
+                <div className="area-image-dots">
+                  {activeArea.images.map((_, index) => (
+                    <div
+                      key={index}
+                      className={`area-image-dot ${index === currentImageIndex ? "active" : ""}`}
+                    />
+                  ))}
+                </div>
+              </>
             ) : (
-              <span className="area-icon">{activeArea.icon}</span>
+              <div className="area-icon-placeholder">{activeArea.icon}</div>
             )}
           </div>
 
