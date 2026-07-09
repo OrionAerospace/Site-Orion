@@ -83,7 +83,7 @@
 }
 
 .timeline-card-highlight {
-    background: linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(14, 165, 233, 0.08));
+    background: var(--bg-card-hover);
     border-color: var(--border-hover);
 }
 
@@ -94,7 +94,7 @@
 .timeline-badge {
     display: inline-block;
     padding: 4px 14px;
-    background: rgba(37, 99, 235, 0.12);
+    background: var(--accent-glow);
     color: var(--accent-primary);
     border-radius: 100px;
     font-size: 0.75rem;
@@ -104,8 +104,8 @@
 }
 
 .badge-gold {
-    background: rgba(56, 189, 248, 0.12);
-    color: var(--accent-tertiary);
+    background: var(--accent-glow);
+    color: var(--text-primary);
 }
 
 .badge-accent {

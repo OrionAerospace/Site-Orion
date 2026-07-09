@@ -12,7 +12,7 @@
 
 .sobre-tag {
   display: block;
-  color: #1a6ef5;
+  color: var(--accent-primary);
   font-size: 12px;
   letter-spacing: 3px;
   font-weight: 600;
@@ -22,15 +22,15 @@
 .sobre-header h2 {
   font-size: 36px;
   margin: 12px 0;
-  color: #ffffff;
+  color: var(--text-primary);
 }
 
 .destaque {
-  color: #1a6ef5;
+  color: var(--accent-primary);
 }
 
 .sobre-header p {
-  color: #aaaaaa;
+  color: var(--text-secondary);
   max-width: 500px;
   margin: 0 auto;
 }
@@ -47,13 +47,13 @@
 }
 
 .sobre-texto h3 {
-  color: #1a6ef5;
+  color: var(--accent-primary);
   font-size: 16px;
   margin-bottom: 8px;
 }
 
 .sobre-texto p {
-  color: #aaaaaa;
+  color: var(--text-secondary);
   line-height: 1.7;
   margin-bottom: 24px;
 }
@@ -79,18 +79,19 @@
 
 .card {
   flex: 1;
-  background-color: #0a1428;
-  border: 1px solid rgba(59, 130, 246, 0.25);
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
   border-radius: 16px;
   padding: 40px 28px;
-  color: #aaaaaa;
+  color: var(--text-secondary);
   text-align: center;
-  transition: border-color 0.2s, transform 0.2s;
+  transition: all var(--transition-fast);
 }
 
 .card:hover {
-  border-color: rgba(59, 130, 246, 0.6);
+  border-color: var(--border-hover);
   transform: translateY(-4px);
+  box-shadow: 0 4px 20px var(--accent-glow);
 }
 
 .card-icon {
@@ -99,7 +100,7 @@
   justify-content: center;
   width: 52px;
   height: 52px;
-  background-color: rgba(26, 110, 245, 0.12);
+  background-color: var(--accent-glow);
   border-radius: 50%;
   margin-bottom: 20px;
 }
@@ -107,7 +108,7 @@
 .card-icon svg {
   width: 22px;
   height: 22px;
-  stroke: #1a6ef5;
+  stroke: var(--accent-primary);
   fill: none;
   stroke-width: 1.5;
   stroke-linecap: round;
@@ -115,7 +116,7 @@
 }
 
 .card h4 {
-  color: #ffffff;
+  color: var(--text-primary);
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 12px;
@@ -124,8 +125,9 @@
 .card p {
   font-size: 13px;
   line-height: 1.7;
-  color: #64748b;
+  color: var(--text-secondary);
 }
+
 @media (max-width: 1024px) {
   .sobre-content {
     gap: 40px;
