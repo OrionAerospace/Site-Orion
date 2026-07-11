@@ -6,6 +6,7 @@ import Navbar from './components/Navbar/Navbar';
 import Sobre from './pages/Sobre/Sobre';
 import Areas from './pages/Areas/Areas';
 import Contato from './pages/Contato/Contato';
+import Footer from './components/Footer/Footer';
 
 export default function App() {
   return (
@@ -25,9 +26,7 @@ export default function App() {
 
       <Contato /> 
 
-      <footer>
-        {/* footer conteúdo aqui */}
-      </footer>
+      <Footer />
 
     </div>
   );
