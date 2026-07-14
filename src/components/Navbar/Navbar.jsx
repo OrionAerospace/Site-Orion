@@ -14,7 +14,7 @@ export default function Navbar() {
         <li><a href="#hero">Home</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#areas">Áreas</a></li>
-        <li><a href="#conquistas">Conquistas</a></li>
+        <li><a href="#trajetoria">Trajetória</a></li>
         <li><a href="#processo">Processo Seletivo</a></li>
       </ul>
 

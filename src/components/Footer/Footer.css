@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@500;600&family=DM+Sans:wght@300;400;500&display=swap');
+
+
+.orion-footer {
+    font-family: 'DM Sans', sans-serif;
+    background: #03060f;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    position: relative;
+    overflow: hidden;
+}
+
+.orion-footer::before {
+    content: '';
+    position: absolute;
+    top: -140px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 680px;
+    height: 320px;
+    background: radial-gradient(
+        ellipse at center,
+        rgba(37, 99, 235, 0.11) 0%,
+        transparent 70%
+    );
+    pointer-events: none;
+    z-index: 0;
+}
+
+.orion-footer::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png');
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.footer-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 56px 40px 28px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1px 1.2fr;
+    gap: 0 52px;
+    margin-bottom: 40px;
+}
+
+.footer-divider-v {
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(255, 255, 255, 0.07),
+        transparent
+    );
+    align-self: stretch;
+}
+
+.footer-brand-col {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.brand-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.brand-logo {
+    height: 70px;
+    width: auto;
+    filter: drop-shadow(0 0 18px rgba(59, 130, 246, 0.22));
+    flex-shrink: 0;
+}
+
+.brand-name {
+    font-family: 'Syne', sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    color: #e8f0ff;
+    margin: 0 0 6px;
+    letter-spacing: -0.01em;
+}
+
+.brand-institution {
+    font-size: 12.5px;
+    color: #3a5280;
+    margin: 0;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.brand-desc {
+    font-size: 16px;
+    color: #5a7299;
+    line-height: 1.65;
+    margin: 0;
+    
+}
+
+.footer-contact-col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-label {
+    font-family: 'Syne', sans-serif;
+    font-size: 11.5px;
+    color: #3a5280;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 0 6px;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.social-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.02);
+    transition: background 0.25s, border-color 0.25s, transform 0.25s;
+    cursor: pointer;
+    min-width: 0;
+}
+
+.social-row:hover {
+    background: rgba(37, 99, 235, 0.09);
+    border-color: rgba(37, 99, 235, 0.28);
+    transform: translateX(5px);
+}
+
+.social-icon-wrap {
+    width: 38px;
+    height: 38px;
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 17px;
+    color: #7a9cc8;
+    transition: background 0.25s, color 0.25s;
+}
+
+.social-row:hover .social-icon-wrap {
+    background: rgba(37, 99, 235, 0.18);
+    color: #93b8f8;
+    border-color: rgba(37, 99, 235, 0.25);
+}
+
+.social-info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.social-platform {
+    font-size: 11px;
+    color: #3a5280;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.social-handle {
+    font-size: 14.5px;
+    color: #7a9cc8;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.social-arrow {
+    font-size: 15px;
+    color: #253a5e;
+    transition: color 0.25s, transform 0.25s;
+    flex-shrink: 0;
+}
+
+.social-row:hover .social-arrow {
+    color: #5b8fd6;
+    transform: translateX(3px);
+}
+
+.footer-bottom-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 22px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.footer-nav a {
+    font-size: 14.5px;
+    color: #3a5280;
+    text-decoration: none;
+    padding: 6px 11px;
+    border-radius: 6px;
+    transition: color 0.2s, background 0.2s;
+}
+
+.footer-nav a:hover {
+    color: #8eaad6;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.nav-dot {
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.09);
+    flex-shrink: 0;
+}
+
+.footer-copy {
+    font-size: 13.5px;
+    color: #283a56;
+    margin: 0;
+    white-space: nowrap;
+}
+@media (max-width: 860px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px 0;
+    }
+
+    .footer-divider-v {
+        display: none;
+    }
+
+    .brand-desc {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .footer-inner {
+        padding: 36px 20px 24px;
+    }
+
+    .footer-bottom-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-copy {
+        white-space: normal;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-grid {
+        gap: 8px;
+    }
+
+    .social-row {
+        padding: 10px 10px;
+        gap: 8px;
+    }
+
+    .social-icon-wrap {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .social-handle {
+        font-size: 13px;
+    }
+}
