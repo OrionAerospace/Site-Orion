@@ -1,6 +1,7 @@
 import './Sobre.css';
 import foguete from '../../assets/foguete.jpg';
 
+
 export default function Sobre() {
   return (
     <section id="sobre" className="section sobre">
