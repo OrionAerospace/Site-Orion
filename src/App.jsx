@@ -1,5 +1,5 @@
 import React from 'react';
-import Conquistas from './pages/Conquistas/Conquistas';
+import Trajetoria from './pages/Trajetoria/Trajetoria';
 import Processo from './pages/Processo/Processo';
 import Hero from './pages/Hero/Hero';
 import Navbar from './components/Navbar/Navbar';
@@ -20,7 +20,7 @@ export default function App() {
 
       <Areas />
 
-      <Conquistas />
+      <Trajetoria />
 
       <Processo />
 
