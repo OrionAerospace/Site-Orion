@@ -17,8 +17,6 @@ export default function Navbar() {
         <li><a href="#trajetoria">Trajetória</a></li>
         <li><a href="#processo">Processo Seletivo</a></li>
       </ul>
-
-      <button className="navbar-cta">Junte-se a nós</button>
     </nav>
   )
 }
