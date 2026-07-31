@@ -145,15 +145,94 @@
     background: var(--accent-glow);
 }
 
-/* ===== RESPONSIVIDADE ===== */
 @media (max-width: 1024px) {
     .processo-grid {
         grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .processo-sidebar {
+        position: static;
+        top: unset;
     }
 }
 
 @media (max-width: 768px) {
+    .processo {
+        padding: 32px 0;
+    }
+
+    .processo-grid {
+        gap: 20px;
+    }
+
+    .processo-steps {
+        gap: 10px;
+    }
+
     .processo-step {
+        padding: 12px 14px;
+        gap: 12px;
+        border-radius: var(--radius-md);
+    }
+
+    .processo-step:hover {
+        transform: none;
+    }
+
+    .step-number {
+        min-width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+        border-radius: 8px;
+    }
+
+    .step-content h4 {
+        font-size: 0.92rem;
+        margin-bottom: 2px;
+    }
+
+    .step-content p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+
+    .processo-card {
+        padding: 16px;
+        border-radius: var(--radius-md);
+    }
+
+    .processo-card h4 {
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+    }
+
+    .processo-requisitos li {
+        font-size: 0.8rem;
+        padding: 4px 0 4px 20px;
+    }
+
+    .download-link {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .processo-step {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 16px 14px;
+    }
+
+    .step-number {
+        min-width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+    }
+
+    .processo-card {
         padding: 18px;
     }
 }

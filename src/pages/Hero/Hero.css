@@ -84,7 +84,7 @@
 }
 
 .hero-title {
-    font-family: var(--font-heading, 'Outfit', sans-serif);
+    font-family: var(--font-heading);
     font-size: clamp(2.8rem, 6vw, 5rem);
     font-weight: 900;
     line-height: 1.08;
@@ -94,14 +94,14 @@
 
 .title-line {
     display: block;
-    color: var(--text-primary, #e8ecf4);
+    color: #4874f0
 }
 
 .title-accent {
-    background: var(--gradient-primary, linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #0ea5e9 100%));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    display: block;
+    color: #ffffff;
+    background: none;
+    -webkit-text-fill-color: initial;
 }
 
 .hero-subtitle {

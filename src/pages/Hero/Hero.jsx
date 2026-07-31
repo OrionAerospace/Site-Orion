@@ -56,8 +56,10 @@ const Hero = () => {
         </h1>
         
         <p className="hero-subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet fermentum lorem. 
-          Ut eu neque a lectus interdum auctor. Nunc non tincidunt felis.
+          A Orion Aerospace
+Design é uma equipe de Competição e Extensão, fundada em 2020, com a missão
+de desenvolver tecnologias aeroespaciais inovadoras e de aproximar a ciência da
+comunidade.
         </p>
         
         <div className="hero-ctas">

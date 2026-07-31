@@ -1,5 +1,5 @@
 import './Sobre.css';
-import foguete from '../../assets/fotosAerodinamica/aero5.jpg';
+import foguete from '../../assets/foguete.jpg';
 
 
 export default function Sobre() {
@@ -9,16 +9,30 @@ export default function Sobre() {
         <div className="section-header">
           <span className="section-tag">Quem Somos</span>
           <h2 className="section-title">Sobre a <span className="text-gradient">Orion</span></h2>
-          <p className="section-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet fermentum lorem.</p>
+          <p className="section-desc">Entre nossas frentes de atuação estão o
+projeto e lançamento de minifoguetes e nanossatélites, além de pesquisas em
+astrobiologia e ações educacionais de extensão.</p>
         </div>
 
         <div className="sobre-content">
           <div className="sobre-texto">
             <h3>Nossa Historia</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet fermentum lorem. Ut eu neque a lectus interdum auctor. Nunc non tincidunt felis.</p>
+            <p>• Nascemos no dia 10 de maio de 2020, em meio à pandemia, idealizados
+por Gustavo Trudes.</p>
+            <p>• O que começou como um sonho virtual transformou-se em um sólido
+projeto de Extensão e Competição da UTFPR-PG.</p>
+            <p>• De nossas primeiras participações online até nos tornarmos uma equipe
+presencial em dezembro de 2021, nossa história é marcada por superação,
+união entre ciência e comunidade, e a busca constante por voos cada vez
+mais altos.</p>
 
             <h3>Trajetorias e Conquistas</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet fermentum lorem. Ut eu neque a lectus interdum auctor. Nunc non tincidunt felis.</p>
+            <p>• Nossa evolução é definida por marcos contínuos de superação.</p>
+            <p>• Acumulamos um histórico de sucesso que inclui lançamentos na Latin
+American Space Challenge (LASC), pódios em competições de
+minifoguetes e o 2o lugar no CubeDesign - CubeSat.</p>
+            <p>• Realizamos também múltiplos lançamentos bem-sucedidos de sondas de
+pesquisa, como a CápsulaUp.</p>
           </div>
 
           <div className="sobre-imagem">
@@ -36,7 +50,8 @@ export default function Sobre() {
               </svg>
             </div>
             <h4>Missao</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet fermentum lorem.</p>
+            <p>Desenvolver tecnologias aeroespaciais inovadoras e de aproximar
+a ciência da comunidade.</p>
           </div>
 
           <div className="card">
@@ -47,7 +62,9 @@ export default function Sobre() {
               </svg>
             </div>
             <h4>Visao</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet fermentum lorem.</p>
+            <p>Consolidar-se como uma referência em inovação e
+multidisciplinaridade , formando profissionais altamente qualificados e
+investindo no futuro de estudantes em formação.</p>
           </div>
 
           <div className="card">
@@ -57,7 +74,8 @@ export default function Sobre() {
               </svg>
             </div>
             <h4>Valores</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet fermentum lorem.</p>
+            <p>Inovação, multidisciplinaridade, responsabilidade social e
+inspiração.</p>
           </div>
 
         </div>
