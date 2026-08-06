@@ -25,6 +25,11 @@
     --text-secondary: #8da2c0;
     --text-muted: #4a6080;
 
+    /* Cores testes para títulos das seções */
+    --teste-azul-escuro: #2563eb;
+    --teste-azul-medio: #638af5;
+    --teste-azul-claro: #c1cdf1;
+
     /* Typography - Atualizada para Montserrat */
     --font-heading: 'Montserrat', sans-serif;
     --font-body: 'Montserrat', sans-serif;

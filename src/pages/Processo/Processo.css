@@ -145,6 +145,10 @@
     background: var(--accent-glow);
 }
 
+.processo .section-title {
+    color: var(--teste-azul-claro) ; 
+}
+
 @media (max-width: 1024px) {
     .processo-grid {
         grid-template-columns: 1fr;
@@ -235,4 +239,5 @@
     .processo-card {
         padding: 18px;
     }
+    
 }

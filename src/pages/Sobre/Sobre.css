@@ -128,6 +128,10 @@
   color: var(--text-secondary);
 }
 
+.sobre .section-title {
+  color: var(--teste-azul-claro);
+}
+
 @media (max-width: 768px) {
   #sobre {
     padding: 100px 24px;
@@ -142,7 +146,7 @@
 .sobre-imagem {
     width: 100%;
     min-height: unset;
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
   }
 
   .sobre-imagem img {

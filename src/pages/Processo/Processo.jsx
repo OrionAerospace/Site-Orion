@@ -22,7 +22,7 @@ export default function Processo() {
       <div className="container">
         <div className="section-header">
           <span className="section-tag">Faça parte</span>
-          <h2 className="section-title">Processo <span className="text-gradient">Seletivo</span></h2>
+          <h2 className="section-title">Processo Seletivo</h2>
           <p className="section-desc">
             Quer fazer parte de uma equipa que transforma sonhos em engenharia real? 
             O seu lugar é aqui.

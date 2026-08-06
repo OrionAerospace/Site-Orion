@@ -101,6 +101,10 @@
     line-height: 1.8;
 }
 
+.conquistas .section-title {
+    color: var(--teste-azul-claro); 
+}
+
 @media (max-width: 768px) {
     .trajetoria-tabs {
         gap: 10px;

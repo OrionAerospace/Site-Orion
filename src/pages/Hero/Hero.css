@@ -94,7 +94,7 @@
 
 .title-line {
     display: block;
-    color: #4874f0
+    color: var(--teste-azul-escuro);
 }
 
 .title-accent {

@@ -19,6 +19,10 @@
   gap: 16px;
 }
 
+.contato .section-title {
+  color: var(--teste-azul-claro);
+}
+
 @media (max-width: 1024px) {
   .contato-grid {
     grid-template-columns: 1fr;

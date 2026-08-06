@@ -66,7 +66,7 @@ export default function Trajetoria() {
         
         <div className="section-header">
           <span className="section-tag">Histórico</span>
-          <h2 className="section-title">Nossa <span className="text-gradient">Trajetória</span></h2>
+          <h2 className="section-title">Nossa Trajetória</h2>
           <p className="section-desc">
             Uma linha do tempo de superação, aprendizagem e voos cada vez mais altos.
           </p>

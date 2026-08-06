@@ -18,11 +18,7 @@ export default function Contato() {
           </span>
 
           <h2 className="section-title">
-            Entre em{" "}
-
-            <span className="text-gradient">
-              Contato
-            </span>
+            Entre em{" "}Contato
           </h2>
 
           <p className="section-desc">
