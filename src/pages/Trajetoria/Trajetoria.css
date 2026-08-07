@@ -38,11 +38,33 @@
     box-shadow: 0 4px 20px var(--accent-glow);
 }
 
-/* --- ESTILOS DO CONTEÚDO (CARD) --- */
+/* --- ESTILOS DO CONTEÚDO (3 COLUNAS: mascote | foto do ano | card) --- */
 .trajetoria-content {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr 1.3fr;
+    align-items: center;
+    gap: 32px;
     animation: fadeInUp 0.4s ease-out;
+}
+
+/* Placeholder reutilizável — substituir por <img> quando as fotos existirem */
+.image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    background: var(--bg-card);
+    border: 2px dashed var(--border-color);
+    border-radius: var(--radius-lg);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 12px;
+}
+
+.trajetoria-foto .image-placeholder {
+    aspect-ratio: 4 / 3;
 }
 
 .timeline-card {
@@ -50,9 +72,8 @@
     border: 1px solid var(--border-color);
     border-radius: var(--radius-lg);
     padding: 40px;
-    max-width: 680px;
     width: 100%;
-    text-align: center;
+    text-align: left;
     transition: all var(--transition-smooth);
 }
 
@@ -63,7 +84,7 @@
 
 .timeline-card-header {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 20px;
 }
 
@@ -101,11 +122,33 @@
     line-height: 1.8;
 }
 
+
 .conquistas .section-title {
     color: var(--teste-azul-claro); 
 }
 
+@media (max-width: 992px) {
+    /* Mascote sai da linha; foto e card lado a lado */
+    .trajetoria-content {
+        grid-template-columns: 1fr 1.2fr;
+        gap: 24px;
+    }
+
+    .trajetoria-mascote {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
+    .trajetoria-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .trajetoria-foto .image-placeholder {
+        aspect-ratio: 16 / 9;
+    }
+
     .trajetoria-tabs {
         gap: 10px;
         margin-bottom: 32px;

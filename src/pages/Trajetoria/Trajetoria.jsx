@@ -66,10 +66,12 @@ export default function Trajetoria() {
         
         <div className="section-header">
           <span className="section-tag">Histórico</span>
+          
           <h2 className="section-title">Nossa Trajetória</h2>
           <p className="section-desc">
             Uma linha do tempo de superação, aprendizagem e voos cada vez mais altos.
           </p>
+
         </div>
 
         {/* Abas dos Anos */}
@@ -87,6 +89,22 @@ export default function Trajetoria() {
 
         {/* Conteúdo Dinâmico do Ano Selecionado */}
         <div className="trajetoria-content">
+
+          {/* 1º - Mascote (esquerda) */}
+          <div className="trajetoria-mascote">
+            <div className="image-placeholder">
+              <span>Mascote da Orion</span>
+            </div>
+          </div>
+
+          {/* 2º - Foto do ano selecionado (meio) */}
+          <div className="trajetoria-foto">
+            <div className="image-placeholder">
+              <span>Foto {activeItem.year}</span>
+            </div>
+          </div>
+
+          {/* 3º - Card com o texto do ano (direita) */}
           <div className="timeline-card timeline-card-highlight">
             <div className="timeline-card-header">
               <span className={`timeline-badge ${activeItem.badgeClass}`}>
