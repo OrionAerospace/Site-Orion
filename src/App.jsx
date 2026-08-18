@@ -5,7 +5,6 @@ import Hero from './pages/Hero/Hero';
 import Navbar from './components/Navbar/Navbar';
 import Sobre from './pages/Sobre/Sobre';
 import Areas from './pages/Areas/Areas';
-import Contato from './pages/Contato/Contato';
 import Footer from './components/Footer/Footer';
 
 export default function App() {
@@ -23,8 +22,6 @@ export default function App() {
       <Trajetoria />
 
       <Processo />
-
-      <Contato /> 
 
       <Footer />
 

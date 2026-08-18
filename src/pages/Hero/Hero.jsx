@@ -63,13 +63,13 @@ comunidade.
         </p>
         
         <div className="hero-ctas">
-          <a href="#contato" className="btn btn-primary btn-lg">
+          <a href="https://linktr.ee/linkorion" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/>
             </svg>
             Seja um Patrocinador
           </a>
-          <a href="#processo" className="btn btn-outline btn-lg">
+          <a href="https://linktr.ee/linkorion" target="_blank" rel="noopener noreferrer" className="btn btn-outline btn-lg">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2"/>
               <circle cx="8.5" cy="7" r="4"/>
