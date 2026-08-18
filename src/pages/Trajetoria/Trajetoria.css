@@ -122,6 +122,11 @@
     line-height: 1.8;
 }
 
+
+.conquistas .section-title {
+    color: var(--teste-azul-claro); 
+}
+
 @media (max-width: 992px) {
     /* Mascote sai da linha; foto e card lado a lado */
     .trajetoria-content {
