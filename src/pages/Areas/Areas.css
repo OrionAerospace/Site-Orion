@@ -3,7 +3,7 @@
 }
 
 .areas {
-  background: var(--bg-primary);
+  background-color: var(--bg-primary);
   position: relative;
   overflow: hidden;
 }

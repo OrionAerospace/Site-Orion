@@ -1,5 +1,5 @@
 import './Sobre.css';
-import foguete from '../../assets/foguete.jpg';
+import foguete from '../../assets/hero-rocket.png';
 
 
 export default function Sobre() {
