@@ -25,6 +25,11 @@
     --text-secondary: #8da2c0;
     --text-muted: #4a6080;
 
+    /* Cores testes para títulos das seções */
+    --teste-azul-escuro: #2563eb;
+    --teste-azul-medio: #638af5;
+    --teste-azul-claro: #c1cdf1;
+
     /* Typography - Atualizada para Montserrat */
     --font-heading: 'Montserrat', sans-serif;
     --font-body: 'Montserrat', sans-serif;
@@ -94,6 +99,7 @@ ul {
 .section {
     padding: var(--section-padding) 0;
     position: relative;
+    background-image: url('/src/assets/space-pattern.svg');
 }
 
 .section-header {
@@ -104,11 +110,11 @@ ul {
 .section-tag {
     display: inline-block;
     padding: 6px 18px;
-    background: rgba(37, 99, 235, 0.08);
-    border: 1px solid rgba(37, 99, 235, 0.15);
+    background: var(--accent-glow);
+    border: 1px solid var(--border-hover);
     border-radius: 100px;
     font-size: 0.78rem;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--accent-primary);
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -119,15 +125,15 @@ ul {
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 800;
     margin-bottom: 16px;
+    color: #ffffff;
 }
 
 .text-gradient {
-    background: var(--gradient-primary);
+    background: linear-gradient(135deg, #FFFFFF 0%, var(--accent-primary) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-
 .section-desc {
     font-size: 1.1rem;
     color: var(--text-secondary);

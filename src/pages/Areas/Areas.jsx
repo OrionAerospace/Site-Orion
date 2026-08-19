@@ -138,7 +138,7 @@ export default function Areas() {
           <span className="section-tag">Áreas Técnicas</span>
 
           <h2 className="section-title">
-            Nossas <span className="text-gradient">Áreas</span>
+            Nossas Áreas
           </h2>
 
           <p className="section-desc">

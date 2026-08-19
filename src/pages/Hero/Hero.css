@@ -7,7 +7,7 @@
     justify-content: center;
     overflow: hidden;
     /* Adicionei uma cor de fundo fallback caso não use as variáveis globais */
-    background: var(--bg-primary, #060b18); 
+   background: var(--bg-primary, #060b18);
 }
 
 .hero-bg {
@@ -34,12 +34,12 @@
     z-index: 2;
     background:
         linear-gradient(180deg,
-            rgba(6, 11, 24, 0.5) 0%,
-            rgba(6, 11, 24, 0.6) 40%,
-            rgba(6, 11, 24, 0.95) 85%,
-            #060b18 100%
+            rgba(0, 7, 44, 0.5) 0%,
+            rgba(0, 7, 44, 0.6) 40%,
+            rgba(0, 7, 44, 0.95) 85%,
+            var(--bg-primary) 100%
         ),
-        radial-gradient(ellipse at 30% 50%, rgba(37, 99, 235, 0.1), transparent 60%);
+        radial-gradient(ellipse at 30% 50%, var(--accent-glow), transparent 60%);
 }
 
 .hero-particles {
@@ -63,8 +63,8 @@
     align-items: center;
     gap: 10px;
     padding: 8px 20px;
-    background: rgba(37, 99, 235, 0.1);
-    border: 1px solid rgba(37, 99, 235, 0.25);
+    background: var(--accent-glow);
+    border: 1px solid var(--border-color);
     border-radius: 100px;
     font-size: 0.82rem;
     font-weight: 500;
@@ -78,13 +78,13 @@
 .badge-pulse {
     width: 8px;
     height: 8px;
-    background: var(--accent-tertiary, #38bdf8);
+    background: var(--accent-primary, #38bdf8);
     border-radius: 50%;
     animation: pulse 2s ease-in-out infinite;
 }
 
 .hero-title {
-    font-family: var(--font-heading, 'Outfit', sans-serif);
+    font-family: var(--font-heading);
     font-size: clamp(2.8rem, 6vw, 5rem);
     font-weight: 900;
     line-height: 1.08;
@@ -94,17 +94,18 @@
 
 .title-line {
     display: block;
-    color: var(--text-primary, #e8ecf4);
+    color: var(--teste-azul-escuro);
 }
 
 .title-accent {
-    background: var(--gradient-primary, linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #0ea5e9 100%));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    display: block;
+    color: #ffffff;
+    background: none;
+    -webkit-text-fill-color: initial;
 }
 
 .hero-subtitle {
+    font-family: var(--font-body, 'Space Grotesk', sans-serif);
     font-size: 1.15rem;
     color: var(--text-secondary, #8da2c0);
     max-width: 620px;
@@ -156,22 +157,22 @@
 .btn-primary {
     background: var(--gradient-primary, linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #0ea5e9 100%));
     color: white;
-    box-shadow: 0 4px 20px rgba(37, 99, 235, 0.25);
+    box-shadow: 0 4px 20px var(--accent-glow);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(37, 99, 235, 0.25);
+    box-shadow: 0 8px 30px var(--accent-glow);
 }
 
 .btn-outline {
     background: transparent;
     color: var(--text-primary, #e8ecf4);
-    border: 1.5px solid rgba(37, 99, 235, 0.3);
+    border: 1.5px solid var(--border-color);
 }
 
 .btn-outline:hover {
-    background: rgba(37, 99, 235, 0.08);
+    background: var(--accent-glow);
     border-color: var(--accent-primary, #2563eb);
     transform: translateY(-2px);
 }
@@ -211,7 +212,7 @@
 .stat-label {
     display: block;
     font-size: 0.82rem;
-    color: var(--text-muted, #4a6080);
+    color: var(--text-secondary);
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-top: 4px;
@@ -220,7 +221,7 @@
 .stat-divider {
     width: 1px;
     height: 40px;
-    background: rgba(37, 99, 235, 0.12);
+    background: var(--border-color);
 }
 
 /* ===== SCROLL INDICATOR ===== */

@@ -1,6 +1,6 @@
 /* ===== TRAJETÓRIA (ABAS) ===== */
 .conquistas {
-    background: var(--bg-secondary);
+    background-color: var(--bg-secondary);
 }
 
 /* --- ESTILOS DAS ABAS --- */
@@ -120,6 +120,11 @@
     font-size: 1.05rem;
     color: var(--text-secondary);
     line-height: 1.8;
+}
+
+
+.conquistas .section-title {
+    color: var(--teste-azul-claro); 
 }
 
 @media (max-width: 992px) {

@@ -1,5 +1,5 @@
 import './Sobre.css';
-import foguete from '../../assets/foguete.jpg';
+import foguete from '../../assets/hero-rocket.png';
 
 
 export default function Sobre() {
@@ -8,7 +8,7 @@ export default function Sobre() {
       <div className="container">
         <div className="section-header">
           <span className="section-tag">Quem Somos</span>
-          <h2 className="section-title">Sobre a <span className="text-gradient">Orion</span></h2>
+          <h2 className="section-title">Sobre a Orion</h2>
           <p className="section-desc">Entre nossas frentes de atuação estão o
 projeto e lançamento de minifoguetes e nanossatélites, além de pesquisas em
 astrobiologia e ações educacionais de extensão.</p>

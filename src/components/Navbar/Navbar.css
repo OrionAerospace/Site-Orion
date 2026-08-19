@@ -7,10 +7,11 @@
   align-items: center;
   justify-content: flex-start;
   padding: 16px 48px;
-  background-color: rgba(5, 8, 22, 0.85);
+  background-color: rgba(0, 7, 44, 0.85);
   backdrop-filter: blur(10px);
   z-index: 1000;
   box-sizing: border-box;
+  border-bottom: 1px solid var(--border-color);
 }
 
 /* --- NOVO: Alinhamento da imagem e do texto --- */
@@ -28,12 +29,12 @@
 /* --------------------------------------------- */
 
 .navbar-logo span {
-  color: #ffffff;
-  font-size: 18px;
+  color: var(--text-primary);
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 2px;
 }
-
 .navbar-links {
   list-style: none;
   display: flex;
@@ -49,27 +50,33 @@
 }
 
 .navbar-links a {
-  color: #cccccc;
+  color: var(--text-secondary);
+  font-family: var(--font-body);
   text-decoration: none;
-  font-size: 14px;
-  transition: color 0.2s;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color var(--transition-fast);
 }
 
 .navbar-links a:hover {
-  color: #ffffff;
+  color: var(--accent-primary);
 }
 
 .navbar-cta {
-  background-color: #1a6ef5;
-  color: #ffffff;
-  border: none;
+  background: var(--gradient-primary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
   padding: 10px 20px;
-  border-radius: 8px;
-  font-size: 14px;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: all var(--transition-fast);
 }
 
 .navbar-cta:hover {
-  background-color: #155ecc;
+  background: var(--bg-card-hover);
+  border-color: var(--accent-primary);
+  box-shadow: 0 4px 15px var(--accent-glow);
 }
