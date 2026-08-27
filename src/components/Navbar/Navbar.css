@@ -60,26 +60,6 @@
   color: var(--accent-primary);
 }
 
-.navbar-cta {
-  background: var(--gradient-primary);
-  color: var(--text-primary);
-  border: 1px solid var(--border-color);
-  padding: 10px 20px;
-  border-radius: var(--radius-md);
-  font-family: var(--font-body);
-  font-size: 0.9rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all var(--transition-fast);
-  margin-left: auto;
-}
-
-.navbar-cta:hover {
-  background: var(--bg-card-hover);
-  border-color: var(--accent-primary);
-  box-shadow: 0 4px 15px var(--accent-glow);
-}
-
 .hamburger-btn {
   display: none;
   flex-direction: column;
@@ -233,7 +213,4 @@
     transform: scaleY(1);
   }
 
-  .navbar-cta {
-    display: none;
-  }
 }

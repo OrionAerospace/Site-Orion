@@ -58,7 +58,6 @@ export default function Navbar() {
         ))}
       </ul>
 
-      <button className="navbar-cta">Fale Conosco</button>
     </nav>
   )
 }
