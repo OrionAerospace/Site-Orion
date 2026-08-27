@@ -48,14 +48,15 @@
 
 .sobre-texto h3 {
   color: var(--accent-primary);
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 8px;
 }
 
 .sobre-texto p {
   color: var(--text-secondary);
-  line-height: 1.7;
-  margin-bottom: 24px;
+  line-height: 1.0;
+  font-size: 18px;
+  margin-bottom: 12px;
 }
 
 .sobre-imagem {
@@ -123,7 +124,7 @@
 }
 
 .card p {
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.7;
   color: var(--text-secondary);
 }
