@@ -16,24 +16,46 @@ astrobiologia e ações educacionais de extensão.</p>
 
         <div className="sobre-content">
           <div className="sobre-texto">
-            <h3>Nossa Historia</h3>
-            <p>• Nascemos no dia 10 de maio de 2020, em meio à pandemia, idealizados
-por Gustavo Trudes.</p>
-            <p>• O que começou como um sonho virtual transformou-se em um sólido
-projeto de Extensão e Competição da UTFPR-PG.</p>
-            <p>• De nossas primeiras participações online até nos tornarmos uma equipe
-presencial em dezembro de 2021, nossa história é marcada por superação,
-união entre ciência e comunidade, e a busca constante por voos cada vez
-mais altos.</p>
+            <h3>Nossa História</h3>
+            <div className="lista">
+              <p>
+                Nascemos no dia 10 de maio de 2020, em meio à pandemia,
+                idealizados por Gustavo Trudes.
+              </p>
 
-            <h3>Trajetorias e Conquistas</h3>
-            <p>• Nossa evolução é definida por marcos contínuos de superação.</p>
-            <p>• Acumulamos um histórico de sucesso que inclui lançamentos na Latin
-American Space Challenge (LASC), pódios em competições de
-minifoguetes e o 2o lugar no CubeDesign - CubeSat.</p>
-            <p>• Realizamos também múltiplos lançamentos bem-sucedidos de sondas de
-pesquisa, como a CápsulaUp.</p>
+              <p>
+                O que começou como um sonho virtual transformou-se em um
+                sólido projeto de Extensão e Competição da UTFPR-PG.
+              </p>
+
+              <p>
+                De nossas primeiras participações online até nos tornarmos
+                uma equipe presencial em dezembro de 2021, nossa história é
+                marcada por superação, união entre ciência e comunidade, e
+                a busca constante por voos cada vez mais altos.
+              </p>
+            </div>
+
+            <h3>Trajetórias e Conquistas</h3>
+            <div className="lista">
+              <p>
+                Nossa evolução é definida por marcos contínuos de superação.
+              </p>
+
+              <p>
+                Acumulamos um histórico de sucesso que inclui lançamentos na
+                Latin American Space Challenge (LASC), pódios em competições
+                de minifoguetes e o 2º lugar no CubeDesign - CubeSat.
+              </p>
+
+              <p>
+                Realizamos também múltiplos lançamentos bem-sucedidos de
+                sondas de pesquisa, como a CápsulaUp.
+              </p>
+            </div>
+
           </div>
+
 
           <div className="sobre-imagem">
             <img src={foguete} alt="Foguete Orion" />
