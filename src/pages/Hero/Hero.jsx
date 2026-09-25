@@ -50,7 +50,7 @@ const Hero = () => {
         
         <h1 className="hero-title">
           <span className="title-line">Orion</span>
-          <span className="title-line title-accent">Aerospace design</span>
+          <span className="title-line title-accent">Aerospace Design</span>
         </h1>
         
         <p className="hero-subtitle">
