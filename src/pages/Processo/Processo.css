@@ -23,7 +23,10 @@
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-lg);
-    transition: all var(--transition-smooth);
+    transition:
+        transform var(--transition-smooth),
+        border-color var(--transition-smooth),
+        box-shadow var(--transition-smooth);
 }
 
 .processo-step:hover {
@@ -146,7 +149,7 @@
 }
 
 .processo .section-title {
-    color: var(--teste-azul-claro) ; 
+    color: var(--text-title-sections) ; 
 }
 
 @media (max-width: 1024px) {

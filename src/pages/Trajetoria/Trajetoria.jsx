@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Trajetoria.css';
 
 // Array com o histórico oficial da Orion
@@ -25,7 +25,7 @@ const trajetoriaData = [
     badgeLabel: 'OrionDays',
     badgeClass: '',
     title: 'Crescendo e impactando',
-    desc: 'Sob a capitania de Bruna Nizer, realizamos a 1ª edição do OrionDays, um evento que uniu ciência, tecnologia e comunidade, e se tornou marca registrada da Orion!. Conquistamos também o 2º lugar no CubeDesign - CubeSat.',
+    desc: 'Sob a capitania de Bruna Nizer, realizamos a 1ª edição do OrionDays, um evento que uniu ciência, tecnologia e comunidade, e se tornou marca registrada da Orion. Conquistamos também o 2º lugar no CubeDesign - CubeSat.',
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ const trajetoriaData = [
     badgeLabel: '2ª Cápsula UP',
     badgeClass: 'badge-gold',
     title: 'Novas oportunidades',
-    desc: 'Com Mariana Cabrinha e Isabelle Distler na capitania, lançamos a 2ª Cápsula UP, mostrando nossa evolução técnica. Também realizamos mais uma edição inesquecível do OrionDays, consolidando nosso papel na região e reforçando o impacto do projeto!.',
+    desc: 'Com Mariana Cabrinha e Isabelle Distler na capitania, lançamos a 2ª Cápsula UP, mostrando nossa evolução técnica. Também realizamos mais uma edição inesquecível do OrionDays, consolidando nosso papel na região e reforçando o impacto do projeto.',
   },
   {
     id: 6,
@@ -49,7 +49,7 @@ const trajetoriaData = [
     badgeLabel: 'Atual',
     badgeClass: 'badge-accent',
     title: 'Foguete não tem ré',
-    desc: 'Sob a capitania de Eduardo de Lima e Djeison Oppelt, seguimos com dedicação e esforço para levar a ciência mais perto da comunidade. Alcançamos a marca do 6º lugar na categoria 3k na LASC.',
+    desc: 'Sob a capitania de Eduardo de Lima e Djeison Oppelt, seguimos com dedicação e esforço para levar a ciência mais perto da comunidade. Alcançamos a marca do 6º lugar na categoria 3km na LASC.',
   }
 ];
 
@@ -81,6 +81,7 @@ export default function Trajetoria() {
               key={item.id}
               className={`trajetoria-tab ${activeYear === item.year ? 'active' : ''}`}
               onClick={() => setActiveYear(item.year)}
+              type="button"
             >
               {item.year}
             </button>
