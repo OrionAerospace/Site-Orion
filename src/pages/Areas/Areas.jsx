@@ -37,9 +37,9 @@ const areas = [
   {
     id: "administrativo",
     title: "Administrativo",
-    subtitle: "Organização, finanças e parcerias",
+    subtitle: "Comunicação, Financeiro, Eventos, Gente & Gestão e Relações Empresariais",
     description:
-      "Responsável pela gestão interna, comunicação com patrocinadores, orçamentos e organização de eventos.",
+      "Garante o funcionamento completo da Orion, administrando desde os recursos e a gestão de pessoas até as questões burocráticas da equipe.",
     activities: [
       "Gestão financeira e patrocínios",
       "Planejamento administrativo",
@@ -53,11 +53,12 @@ const areas = [
     title: "Aerodinâmica",
     subtitle: "Performance e estabilidade em voo",
     description:
-      "Foca no desenvolvimento de superfícies, perfis e estudos que garantem eficiência e controle aerodinâmico.",
+      "Esta área é a responsável pelo desenvolvimento do nosso minifoguete, sendo dividida em quatro gerências.",
     activities: [
-      "Análise de perfis de asa",
-      "Simulações CFD",
-      "Testes de túnel de vento",
+      "Estrutura, que projeta o corpo do foguete para assegurar resistência e aerodinâmica",
+      "Propulsão, encarregada do motor e do desempenho no lançamento",
+      "Aviônica, que desenvolve a eletrônica e os sistemas de controle de voo",
+      "Recuperação, que cria e testa os mecanismos para o retorno seguro do foguete", 
     ],
     images: [aero1, aero2, aero3, aero4, aero5],
     tabIcon: IoIosRocket,
@@ -65,12 +66,12 @@ const areas = [
   {
     id: "computacao",
     title: "Computação",
-    subtitle: "Software, dados e automação",
+    subtitle: "Software, I.A e automação",
     description:
-      "Desenvolve os sistemas de controle, processamento de dados, simulações e ferramentas digitais da equipe.",
+      "A Computação atua no desenvolvimento de softwares, simulações e ferramentas digitais da equipe.",
     activities: [
-      "Desenvolvimento de software embarcado",
-      "Análise de dados de voo",
+      "Soluções com inteligência artificial",
+      "Dividi-se em Front-end e Back-end",
       "Ferramentas de modelagem e visualização",
     ],
     images: [],
@@ -81,11 +82,11 @@ const areas = [
     title: "Extensão",
     subtitle: "Engajamento e divulgação comunitária",
     description:
-      "Atua na comunicação com escolas, eventos e comunidade para expandir o alcance e impacto do projeto.",
+      "Temos como missão compartilhar o saber científico produzido internamente e despertar em crianças e adolescentes a curiosidade pela graduação e pela ciência.",
     activities: [
-      "Eventos educativos",
-      "Oficinas de divulgação científica",
-      "Campanhas de engajamento social",
+      "Fazem do aprendizado algo inspirador e ao alcance de todos.",
+      "Oficinas hands-on e minicursos",
+      "Conecta a pesquisa ao público",
     ],
     images: [ext1, ext2, ext3, ext4],
     tabIcon: IoIosPeople,
@@ -95,11 +96,11 @@ const areas = [
     title: "Pesquisa",
     subtitle: "Inovação e conhecimento científico",
     description:
-      "Conduz estudos técnicos e experimentos que avaliam novas tecnologias e aprimoram o desempenho das missões.",
+      "Conduzimos pesquisas, análises e experimentos dedicados ao avanço de técnicas e à criação de novos conhecimentos.",
     activities: [
-      "Estudos de materiais e processos",
+      "Astrobiologia",
       "Coleta e análise de dados experimentais",
-      "Publicações e relatórios técnicos",
+      "Energia Sustentável",
     ],
     images: [pesq1, pesq2, pesq3, pesq4],
     tabIcon: CiSearch,
@@ -107,28 +108,26 @@ const areas = [
 ];
 
 export default function Areas() {
-  const [activeArea, setActiveArea] = useState(areas[0]);
+  const [activeAreaId, setActiveAreaId] = useState(areas[0].id);
+  const activeArea = areas.find(area => area.id === activeAreaId);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Controlar a transição de imagens
   useEffect(() => {
-    // Se a área não tem imagens, não fazer nada
-    if (!activeArea.images || activeArea.images.length === 0) {
+    setCurrentImageIndex(0);
+
+    if (!activeArea.images?.length) {
       return;
     }
 
-    // Resetar o índice da imagem quando muda de área
-    setCurrentImageIndex(0);
-
-    // Configurar intervalo para trocar de imagem
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) =>
-        (prevIndex + 1) % activeArea.images.length
+      setCurrentImageIndex((prev) =>
+        (prev + 1) % activeArea.images.length
       );
-    }, 4000); // Trocar de imagem a cada 4 segundos
+    }, 2800);
 
     return () => clearInterval(interval);
-  }, [activeArea]);
+  }, [activeAreaId]);
 
   return (
     <section className="areas section" id="areas">
@@ -147,16 +146,19 @@ export default function Areas() {
           </p>
         </div>
 
-        <div className="areas-tabs">
+        <div className="areas-tabs" role="tablist" aria-label="Áreas técnicas">
           {areas.map((area) => {
             const Icon = area.tabIcon;
             return (
               <button
                 key={area.id}
+                type="button"
+                role="tab"
+                aria-selected={activeArea.id === area.id}
                 className={`area-tab ${activeArea.id === area.id ? "active" : ""}`}
-                onClick={() => setActiveArea(area)}
+                onClick={() => setActiveAreaId(area.id)}
               >
-                <Icon size={24} />
+                <Icon size={24} aria-hidden="true" />
                 <span className="tab-label">{area.title}</span>
               </button>
             );

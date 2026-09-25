@@ -74,7 +74,10 @@
     padding: 40px;
     width: 100%;
     text-align: left;
-    transition: all var(--transition-smooth);
+    transition:
+        transform var(--transition-smooth),
+        border-color var(--transition-smooth),
+        box-shadow var(--transition-smooth);
 }
 
 .timeline-card-highlight {
@@ -124,7 +127,7 @@
 
 
 .conquistas .section-title {
-    color: var(--teste-azul-claro); 
+    color: var(--text-title-sections); 
 }
 
 @media (max-width: 992px) {

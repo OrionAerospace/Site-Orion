@@ -1,18 +1,17 @@
-import React from 'react';
 import './Processo.css';
 
 // Dados estruturados para facilitar a manutenção
 const etapasProcesso = [
   { id: 1, titulo: 'Inscrição Online', desc: 'Preenchimento do formulário com os seus dados e área de interesse.' },
-  { id: 2, titulo: 'Dinâmica em Grupo', desc: 'Resolução de um desafio prático em equipa para avaliarmos a colaboração.' },
+  { id: 2, titulo: 'Dinâmica em Grupo', desc: 'Resolução de um desafio prático em equipe para avaliarmos a colaboração.' },
   { id: 3, titulo: 'Entrevista Individual', desc: 'Conversa para conhecermos melhor o seu perfil, motivações e alinhamento.' },
-  { id: 4, titulo: 'Período de Capacitação', desc: 'Treino intensivo para aprender as bases necessárias para a sua área.' }
+  { id: 4, titulo: 'Período de Capacitação', desc: 'Treinamento intensivo para aprender as bases necessárias para a sua área.' }
 ];
 
 const preRequisitos = [
   'Estar matriculado num curso de graduação da universidade.',
   'Ter disponibilidade de 10h a 12h semanais para o projeto.',
-  'Vontade de aprender e trabalhar em equipa.',
+  'Vontade de aprender e trabalhar em equipe.',
   'Não é exigida experiência prévia na área técnica.'
 ];
 
@@ -24,7 +23,7 @@ export default function Processo() {
           <span className="section-tag">Faça parte</span>
           <h2 className="section-title">Processo Seletivo</h2>
           <p className="section-desc">
-            Quer fazer parte de uma equipa que transforma sonhos em engenharia real? 
+            Quer fazer parte de uma equipe que transforma sonhos em engenharia real? 
             O seu lugar é aqui.
           </p>
         </div>
@@ -50,8 +49,8 @@ export default function Processo() {
             <div className="processo-card">
               <h4>Pré-requisitos</h4>
               <ul className="processo-requisitos">
-                {preRequisitos.map((req, index) => (
-                  <li key={index}>{req}</li>
+                {preRequisitos.map((req) => (
+                  <li key={req}>{req}</li>
                 ))}
               </ul>
             </div>

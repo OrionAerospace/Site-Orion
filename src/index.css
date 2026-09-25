@@ -14,7 +14,7 @@
 
     /* Gradientes atualizados com a nova paleta */
     --gradient-primary: linear-gradient(135deg, #123498 0%, #0A2471 100%);
-    --gradient-accent: linear-gradient(135deg, #DEECFB 0%, #123498 100%);
+    /*--gradient-accent: linear-gradient(135deg, #DEECFB 0%, #123498 100%);*/
     --gradient-bg: linear-gradient(180deg, #00072c 0%, #061651 100%);
 
     --border-color: rgba(222, 236, 251, 0.12);
@@ -24,11 +24,7 @@
     --text-primary: #e8ecf4;
     --text-secondary: #8da2c0;
     --text-muted: #4a6080;
-
-    /* Cores testes para títulos das seções */
-    --teste-azul-escuro: #2563eb;
-    --teste-azul-medio: #638af5;
-    --teste-azul-claro: #c1cdf1;
+    --text-title-sections: #c1cdf1;
 
     /* Typography - Atualizada para Montserrat */
     --font-heading: 'Montserrat', sans-serif;

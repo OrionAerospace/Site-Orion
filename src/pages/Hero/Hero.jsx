@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 import './Hero.css';
 import orionBg1 from '../../assets/orion-bg-1.jpg';
 import orionBg2 from '../../assets/orion-bg-2.jpg';
@@ -9,12 +9,10 @@ import orionBg4 from '../../assets/orion-bg-4.jpg';
 const backgroundImages = [orionBg1, orionBg2, orionBg3, orionBg4];
 
 const StatItem = ({ number, label }) => (
-  <>
-    <div className="stat">
-      <span className="stat-number">{number}</span>
-      <span className="stat-label">{label}</span>
-    </div>
-  </>
+  <div className="stat">
+    <span className="stat-number">{number}</span>
+    <span className="stat-label">{label}</span>
+  </div>
 );
 
 const Hero = () => {
@@ -33,7 +31,7 @@ const Hero = () => {
       {/*backgrounds com transição*/}
       {backgroundImages.map((img, index) => (
         <div
-        key={index}
+        key={img}
         className={`hero-bg ${index === currentBg? 'active' : ''}`}
         style={{backgroundImage: `url(${img})` }} 
         />
@@ -51,8 +49,8 @@ const Hero = () => {
         </div>
         
         <h1 className="hero-title">
-          <span className="title-line">ORION</span>
-          <span className="title-line title-accent">Aerospace design</span>
+          <span className="title-line">Orion</span>
+          <span className="title-line title-accent">Aerospace Design</span>
         </h1>
         
         <p className="hero-subtitle">
