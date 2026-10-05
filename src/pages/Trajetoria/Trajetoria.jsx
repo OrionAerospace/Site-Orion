@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Trajetoria.css';
+import mascoteImg from '../../assets/mascote.jpg';
 
 // Array com o histórico oficial da Orion
 const trajetoriaData = [
@@ -93,9 +94,11 @@ export default function Trajetoria() {
 
           {/* 1º - Mascote (esquerda) */}
           <div className="trajetoria-mascote">
-            <div className="image-placeholder">
-              <span>Mascote da Orion</span>
-            </div>
+            <img
+             src={mascoteImg}
+             alt="Mascote da Orion"
+             style={{ width: '100%', aspectRatio: '4/5', objectFit: 'cover', borderRadius: 'var(--radius-lg)' }}
+           />
           </div>
 
           {/* 2º - Foto do ano selecionado (meio) */}
