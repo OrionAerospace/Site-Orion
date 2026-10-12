@@ -1,6 +1,21 @@
 import { useState } from 'react';
 import './Trajetoria.css';
-import mascoteImg from '../../assets/mascote.jpg';
+
+// Importar imagens do Mascote
+import mascote1Img from '../../assets/mascote/mascote1Img.jpg';
+import mascote2Img from '../../assets/mascote/mascote2Img.jpg';
+import mascote3Img from '../../assets/mascote/mascote3Img.jpg';
+import mascote4Img from '../../assets/mascote/mascote4Img.jpg';
+import mascote5Img from '../../assets/mascote/mascote5Img.jpg';
+import mascote6Img from '../../assets/mascote/mascote6Img.jpg';
+
+// Importar imagens trajetoria
+import img2020 from '../../assets/fotosTrajetoria/img2020.png';
+import img2021 from '../../assets/fotosTrajetoria/img2021.jpg';
+import img2022 from '../../assets/fotosTrajetoria/img2022.jpg';
+import img2023 from '../../assets/fotosTrajetoria/img2023.JPG';
+import img2024 from '../../assets/fotosTrajetoria/img2024.jpg';
+import img2025 from '../../assets/fotosTrajetoria/img2025.png';
 
 // Array com o histórico oficial da Orion
 const trajetoriaData = [
@@ -11,6 +26,8 @@ const trajetoriaData = [
     badgeClass: '', 
     title: 'Onde tudo começou',
     desc: 'Fundação da equipe em maio de 2020 e estreia com o 3º lugar na LASC (virtual) em setembro. Em novembro, garantimos o 4º lugar no CubeDesign - CubeSat (virtual).',
+    mascote: mascote1Img,
+    foto: img2020
   },
   {
     id: 2,
@@ -19,6 +36,8 @@ const trajetoriaData = [
     badgeClass: '',
     title: 'Primeiras conquistas',
     desc: 'Sob liderança de Calandra Tilpe, conquistamos o 1º lugar em DataScience e 3º em CubeSat. Demos um passo histórico ao nos tornarmos um projeto presencial, celebrado com o lançamento da 1ª Cápsula UP!.',
+    mascote: mascote2Img,
+    foto: img2021
   },
   {
     id: 3,
@@ -27,6 +46,8 @@ const trajetoriaData = [
     badgeClass: '',
     title: 'Crescendo e impactando',
     desc: 'Sob a capitania de Bruna Nizer, realizamos a 1ª edição do OrionDays, um evento que uniu ciência, tecnologia e comunidade, e se tornou marca registrada da Orion. Conquistamos também o 2º lugar no CubeDesign - CubeSat.',
+    mascote: mascote3Img,
+    foto: img2022
   },
   {
     id: 4,
@@ -35,6 +56,8 @@ const trajetoriaData = [
     badgeClass: 'badge-gold',
     title: 'Um novo patamar',
     desc: 'Sob a liderança de Arthur Andrioli, a Orion deu um passo fundamental: a abertura do CNPJ, formalizando o projeto. Lançamos nosso primeiro foguete, o Odyssey, e alcançamos o 9º lugar na categoria 3km da LASC.',
+    mascote: mascote4Img,
+    foto: img2023
   },
   {
     id: 5,
@@ -43,6 +66,8 @@ const trajetoriaData = [
     badgeClass: 'badge-gold',
     title: 'Novas oportunidades',
     desc: 'Com Mariana Cabrinha e Isabelle Distler na capitania, lançamos a 2ª Cápsula UP, mostrando nossa evolução técnica. Também realizamos mais uma edição inesquecível do OrionDays, consolidando nosso papel na região e reforçando o impacto do projeto.',
+    mascote: mascote5Img,
+    foto: img2024
   },
   {
     id: 6,
@@ -51,6 +76,8 @@ const trajetoriaData = [
     badgeClass: 'badge-accent',
     title: 'Foguete não tem ré',
     desc: 'Sob a capitania de Eduardo de Lima e Djeison Oppelt, seguimos com dedicação e esforço para levar a ciência mais perto da comunidade. Alcançamos a marca do 6º lugar na categoria 3km na LASC.',
+    mascote: mascote6Img,
+    foto: img2025
   }
 ];
 
@@ -72,7 +99,6 @@ export default function Trajetoria() {
           <p className="section-desc">
             Uma linha do tempo de superação, aprendizagem e voos cada vez mais altos.
           </p>
-
         </div>
 
         {/* Abas dos Anos */}
@@ -95,17 +121,19 @@ export default function Trajetoria() {
           {/* 1º - Mascote (esquerda) */}
           <div className="trajetoria-mascote">
             <img
-             src={mascoteImg}
-             alt="Mascote da Orion"
-             style={{ width: '100%', aspectRatio: '4/5', objectFit: 'cover', borderRadius: 'var(--radius-lg)' }}
-           />
+              src={activeItem.mascote}
+              alt={`Mascote da Orion em ${activeItem.year}`}
+              style={{ width: '100%', aspectRatio: '4/5', objectFit: 'cover', borderRadius: 'var(--radius-lg)' }}
+            />
           </div>
 
           {/* 2º - Foto do ano selecionado (meio) */}
           <div className="trajetoria-foto">
-            <div className="image-placeholder">
-              <span>Foto {activeItem.year}</span>
-            </div>
+            <img
+              src={activeItem.foto}
+              alt={`Equipa da Orion no ano de ${activeItem.year}`}
+              style={{ width: '100%', aspectRatio: '4/5', objectFit: 'cover', borderRadius: 'var(--radius-lg)' }}
+            />
           </div>
 
           {/* 3º - Card com o texto do ano (direita) */}
