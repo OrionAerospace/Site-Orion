@@ -21,6 +21,16 @@ import pesq2 from "../../assets/fotosPesquisa/pesq2.jpg";
 import pesq3 from "../../assets/fotosPesquisa/pesq3.jpg";
 import pesq4 from "../../assets/fotosPesquisa/pesq4.jpg";
 
+// Importar imagens de Adm
+import adm1 from "../../assets/fotosAdm/adm1.jpg";
+import adm2 from "../../assets/fotosAdm/adm2.JPG";
+import adm3 from "../../assets/fotosAdm/adm3.jpg";
+import adm4 from "../../assets/fotosAdm/adm4.jpg";
+
+// Importar imagens de Computação
+import comp1 from "../../assets/fotosComputacao/comp1.jpg";
+import comp2 from "../../assets/fotosComputacao/comp2.jpg";
+import comp3 from "../../assets/fotosComputacao/comp3.jpg";
 
 // Icone administrativo
 import { FaUserGear } from "react-icons/fa6";
@@ -45,7 +55,7 @@ const areas = [
       "Planejamento administrativo",
       "Articulação com instituições e mídia",
     ],
-    images: [],
+    images: [adm2, adm3, adm4, adm1],
     tabIcon: FaUserGear,
   },
   {
@@ -74,7 +84,7 @@ const areas = [
       "Dividi-se em Front-end e Back-end",
       "Ferramentas de modelagem e visualização",
     ],
-    images: [],
+    images: [comp1, comp2, comp3],
     tabIcon: FaCode,
   },
   {

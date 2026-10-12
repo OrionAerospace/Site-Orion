@@ -85,10 +85,10 @@ comunidade.
           <StatItem number="5" label="Áreas técnicas" />
           <div className="stat-divider"></div>
           
-          <StatItem number="3" label="Competições" />
+          <StatItem number="4" label="Competições" />
           <div className="stat-divider"></div>
           
-          <StatItem number="2" label="Foguetes lançados" />
+          <StatItem number="3" label="Foguetes lançados" />
         </div>
       </div>
       
