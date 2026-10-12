@@ -13,7 +13,7 @@ import mascote6Img from '../../assets/mascote/mascote6Img.jpg';
 import img2020 from '../../assets/fotosTrajetoria/img2020.png';
 import img2021 from '../../assets/fotosTrajetoria/img2021.jpg';
 import img2022 from '../../assets/fotosTrajetoria/img2022.jpg';
-import img2023 from '../../assets/fotosTrajetoria/img2023.JPG';
+import img2023 from '../../assets/fotosTrajetoria/img2023.jpg';
 import img2024 from '../../assets/fotosTrajetoria/img2024.jpg';
 import img2025 from '../../assets/fotosTrajetoria/img2025.png';
 
